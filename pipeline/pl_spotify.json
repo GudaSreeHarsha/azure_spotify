@@ -313,7 +313,7 @@
 			}
 		],
 		"parameters": {
-			"loo_input": {
+			"loop_input": {
 				"type": "array",
 				"defaultValue": [
 					{
