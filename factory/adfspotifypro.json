@@ -1,0 +1,9 @@
+{
+	"name": "adfspotifypro",
+	"location": "westus3",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7ee9eb80-3671-4466-a48c-eaabe771a781",
+		"tenantId": "8018eb16-dc0f-46ac-ac1f-53d2131091bd"
+	}
+}
