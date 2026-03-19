@@ -5,13 +5,18 @@
 			"referenceName": "ls_adls_connection_csv",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@item().name",
+					"value": "@dataset().fileName",
 					"type": "Expression"
 				},
 				"folderPath": "orders",
