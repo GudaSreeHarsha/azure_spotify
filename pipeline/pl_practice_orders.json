@@ -148,7 +148,10 @@
 									"referenceName": "ds_csv_dynamic",
 									"type": "DatasetReference",
 									"parameters": {
-										"fileName": "@item().name"
+										"fileName": {
+											"value": "@pipeline().parameters.fileName",
+											"type": "Expression"
+										}
 									}
 								}
 							],
