@@ -11,9 +11,6 @@
 			},
 			"folder": {
 				"type": "string"
-			},
-			"fileName": {
-				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -22,17 +19,11 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@dataset().fileName",
+					"value": "@item().name",
 					"type": "Expression"
 				},
-				"folderPath": {
-					"value": "@dataset().folder",
-					"type": "Expression"
-				},
-				"container": {
-					"value": "@dataset().container",
-					"type": "Expression"
-				}
+				"folderPath": "orders",
+				"container": "input"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
