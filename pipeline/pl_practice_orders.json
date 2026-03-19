@@ -17,7 +17,11 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "ds_get_metadata_csv",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"container": "input",
+							"folder": "orders"
+						}
 					},
 					"fieldList": [
 						"childItems"
