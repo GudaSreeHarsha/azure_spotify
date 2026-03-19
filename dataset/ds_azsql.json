@@ -7,6 +7,29 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": []
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "customer_name",
+				"type": "varchar"
+			},
+			{
+				"name": "amount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "file_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "adf",
+			"table": "orders"
+		}
 	}
 }
